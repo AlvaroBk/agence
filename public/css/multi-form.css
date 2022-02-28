@@ -1,0 +1,282 @@
+/* input {
+    width: calc(100% - 10px)!important;
+    min-height: 30px!important;
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+    letter-spacing: .5px!important;
+    /*9border: 0!important;*/
+
+
+/*border-bottom: 2px solid #eb0909!important;*/
+
+
+/* border-radius: 50px!important; */
+
+
+/*background: transparent!important;*/
+
+
+/* } */
+
+.multisteps-form__progress-btn.js-active.completed {
+    color: #24cf5f!important;
+}
+
+input:focus {
+    outline: none!important;
+    border-color: #fbcf34!important;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    
+    color: #575756;
+    background-color: transparent;
+    /*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border:none;
+    
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+input{
+    border-radius: 50px !important;
+    border: 1px solid #575756 !important;
+    line-height: 18px;
+
+}
+
+
+/*
+input:valid{
+    border-color: #24cf5f!important;
+}*/
+
+#amount {
+    border: none!important;
+    background: transparent;
+}
+
+#logoDisplay {
+    background: gainsboro;
+    display: block;
+    height: 100px;
+    width: 25%;
+    margin: 0px auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.errorMessage {
+    color: #cc0033;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 5px 0 0;
+}
+
+.multisteps-form__progress {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.multisteps-form__progress-btn,
+.form__progress-btn {
+    font-size: 12px;
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    position: relative;
+    padding-top: 20px;
+    color: rgba(108, 117, 125, 0.7);
+    text-indent: -9999px;
+    border: none;
+    background-color: transparent;
+    outline: none !important;
+    cursor: pointer;
+}
+
+@media (min-width: 500px) {
+    .multisteps-form__progress-btn,
+    .form__progress-btn {
+        text-indent: 0;
+    }
+}
+
+.multisteps-form__progress-btn:before,
+.form__progress-btn:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    content: '';
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all 0.15s linear 0s, -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s, -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.multisteps-form__progress-btn:after,
+.form__progress-btn:after {
+    position: absolute;
+    top: 5px;
+    left: calc(-50% - 13px / 2);
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    display: block;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: currentColor;
+    z-index: 1;
+}
+
+.multisteps-form__progress-btn.js-active:after {
+    background-color: #24cf5f;
+}
+
+.multisteps-form__progress-btn:first-child:after,
+.form__progress-btn:first-child:after {
+    display: none;
+}
+
+.multisteps-form__progress-btn.js-active {
+    color: rgb(255, 16, 16);
+}
+
+.form__progress-btn.bullet.active {
+    color: #24cf5f;
+}
+
+.multisteps-form__progress-btn.js-active:before {
+    -webkit-transform: translateX(-50%) scale(1.2);
+    transform: translateX(-50%) scale(1.2);
+    background-color: currentColor;
+}
+
+.multisteps-form__panel {
+    position: relative;
+    left: 50px;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.multisteps-form__panel.js-active {
+    /*height: auto;*/
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+    transition-delay: 0s;
+    left: 0;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.check {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.checktoggle {
+    background-color: #e0001a;
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 24px;
+    margin-bottom: 0;
+    position: relative;
+    width: 48px;
+}
+
+.checktoggle:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(5px, -50%);
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: left 300ms ease, transform 300ms ease;
+}
+
+.check:checked+.checktoggle {
+    background-color: #55ce63;
+}
+
+.check:checked+.checktoggle:after {
+    left: 100%;
+    transform: translate(calc(-100% - 5px), -50%);
+}
+
+
+/*Second Form*/
+
+.form-outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-outer form {
+    display: flex;
+    width: 400%;
+}
+
+.form-outer form .page {
+    width: 25%;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.form-outer form .page .field {
+    margin: 45px 0;
+    display: flex;
+    position: relative;
+}
+
+form .page .field .label {
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.form-progress-bar .step p.active {
+    color: #24cf5f;
+    transition: 0.2s linear;
+}

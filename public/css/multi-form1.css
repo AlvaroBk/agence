@@ -1,0 +1,34 @@
+
+	.form-outer{
+		width: 100%;
+		overflow: hidden;
+		height: 80%;
+	}
+	.form-outer form{
+		display: flex;
+		width: 400%;
+	}
+	.form-outer form .page{
+		width: 25%;
+		transition: margin-left 0.3s ease-in-out;
+	}
+	
+	.form-outer form .page .field{
+		margin: 45px 0;
+		display: flex;
+		position: relative;
+	}
+	form .page .field .label{
+		position: absolute;
+		top: -30px;
+		font-weight: 500;
+	}
+	@keyframes animate {
+		100%{
+			transform: scaleX(1);
+		}
+	}
+	.form-progress-bar .step p.active{
+		color: #24cf5f;
+		transition: 0.2s linear;
+	}

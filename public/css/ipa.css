@@ -1,0 +1,185 @@
+.logo{
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 100px;
+
+    
+}
+.sub{
+    margin: auto;
+    text-align: center;
+    size:10px;
+    margin-top: 0px;
+    
+}
+.sub1{
+    margin: auto;
+    text-align: center;
+    margin-top: -30px;
+}
+.sub2{
+    margin: auto;
+    text-align: center;
+    margin-top: -10px;
+}
+.sub3{
+    margin: auto;
+    text-align: center;
+    margin-top: -25px;
+    font-size:115%;
+}
+.sub4{
+    margin: auto;
+    text-align: center;
+    margin-top: -25px;
+}
+.LinhaB{
+    margin: auto;
+    text-align: center;
+    margin-top: -35px;
+}
+.Data{
+    margin: auto;
+    text-align: left;
+    margin-top: 5px;
+}
+.Dia{
+    margin: auto;
+    text-align: right;
+    margin-top: -50px;
+}
+.ano{
+
+    margin-right:5%;
+    margin-top:-10%;
+    text-align:right;
+    height: 10px;
+    
+    
+}
+
+.principal{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.Taxas2{
+    margin-top: 0%;
+    text-align: left;
+}
+.titutlo{
+    margin: auto;
+    text-align: center;
+}
+.para{
+     
+    text-align:left;
+    margin-left: 30rem;
+    size:10px;
+    width: 100%;
+}
+.title{
+    margin-top: 5%;
+text-align: center;
+
+
+ }
+ .sub00{
+    margin: auto;
+    text-align: center;
+    size:10px;
+    
+    
+    }
+
+
+
+.sub11{
+    margin: auto;
+    text-align: center;
+   
+}
+
+.sub22{
+    
+    margin: auto;
+    text-align: center;
+    width:75%;
+    
+    
+}
+.duat{
+    margin: auto;
+    text-align: center;
+    margin-top:50px;
+    }
+
+.corpo{
+    text-align:justify;
+}
+
+.corpoipa{
+    text-align:center;
+    border:1px solid black;
+    width:80%;
+    margin:auto;
+}
+.taxas{
+    float: left;
+    width:30%; 
+    margin-top:60px; 
+}
+
+.taxas1{
+    width:30%;
+    float: right; 
+    text-align:center;  
+}
+
+.presi{
+    margin: auto;
+    text-align: center;
+}
+.presidente{
+    margin: auto;
+    text-align: center;
+    margin-top: -20px;
+}
+
+table, th, td {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+   
+   
+ }
+
+ .titulo{
+     width:70%;
+     margin:auto;
+     border-top:3px solid #000 ;
+     border-bottom: 3px solid #000;
+     border-top-style: double;
+     border-bottom-style: double;
+     border-top-left-radius: 25px;
+     border-top-right-radius: 25px;
+     border-bottom-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+     text-align:center;
+     margin-top:20px;
+ }
+
+ .auto{
+     margin:auto;
+     text-align: center;
+ }
+ .main{
+     border:3px solid black;
+     border-style:double;
+ }
+
+ .details{
+     margin-top:200px;
+     margin-left: 10px;
+ }

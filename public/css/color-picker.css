@@ -1,0 +1,49 @@
+.cartao {
+    text-align: center;
+}
+
+#color-header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.color-list {
+    list-style: none;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.color-item {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.color-item:hover {
+    transform: scale(1.1);
+}
+
+#red {
+    background-color: #ef5350;
+}
+
+#green {
+    background-color: #66bb6a;
+}
+
+#amber {
+    background-color: #ffca28;
+}
+
+#blue {
+    background-color: #42a5f5;
+}
+
+#gray {
+    background-color: #bdbdbd;
+}

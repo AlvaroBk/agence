@@ -1,0 +1,440 @@
+body {
+    font-family: 'DejaVu Sans Condensed';
+    font-size: 11pt;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 0pt;
+    margin-top: 0pt;
+    font-size: 8px;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0pt;
+    margin-top: 0pt;
+    font-size: 12px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0pt;
+    margin-top: 0pt;
+    font-family: 'Abel';
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#main-content {
+    width: 660px;
+    height: 453px;
+}
+
+#top-content {
+    width: 642.5px;
+    height: 37px;
+    border: 1px solid;
+    background-color: #fff;
+}
+
+.logo-content {
+    width: 260px;
+    border-right: 1px solid;
+}
+
+.title-content {
+    width: 320px;
+    border-right: 1px solid;
+}
+
+.identity-content {
+    width: 54.3px;
+}
+
+.logo-content,
+.title-content,
+.identity-content {
+    height: 40px;
+    float: left;
+}
+
+.logo {
+    width: 50px;
+    margin: 0px 0px 0px 3px;
+    background-color: #fff;
+    padding: 1px 0px 0px 0px;
+}
+
+.logo-descr {
+    width: 150px;
+    background-color: #fff;
+    font-weight: bold;
+    padding: 1px 0px 0px 0px;
+}
+
+.logo_1 {
+    width: 32px;
+    background-color: #FFF;
+    padding: 1px 0px 0px 0px;
+}
+
+.logo,
+.logo-descr,
+.logo_1 {
+    height: 12px;
+    float: left;
+}
+
+#empty-space {
+    width: 642.5px;
+    height: 11px;
+}
+
+#top1-menu {
+    width: 642.5px;
+    height: 70px;
+    border: 1px solid;
+    background-color: #fff;
+}
+
+#top2-menu {
+    width: 642.5px;
+    height: 80px;
+    border: 1px solid;
+}
+
+.top2-title {
+    width: 642.5px;
+    height: 15px;
+    background-color: #fff;
+}
+
+#lower-menu {
+    width: 642.5px;
+    height: 260px;
+    border: 1px solid;
+}
+
+.left-content {
+    background-color: #fff;
+}
+
+.left-content,
+.right-content {
+    width: 319px;
+    height: 320px;
+    float: left
+}
+
+.left-space {
+    width: 0px;
+    height: 310px;
+    border: 1px solid;
+    float: left;
+    background-color: red;
+}
+
+.middle-logo {
+    width: 320px;
+    height: 310px;
+    float: left;
+    margin-left: 10px;
+}
+
+.right-space {
+    height: 310px;
+    width: 1px;
+    background-color: #000;
+    float: left
+}
+
+.top-name {
+    height: 15px;
+    width: 253px;
+}
+
+.lower-logo {
+    width: 286px;
+    height: 287px;
+    border: 1px dashed;
+    -moz-border-radius: 50px;
+    background-size: 800px 800px;
+    /* background-image: url("https://chokwe.ercis.co.tz/images/imovel.png");		 */
+}
+
+.upper-logo {
+    width: 280px;
+    height: 88px;
+}
+
+.upper-logo1 {
+    width: 285px;
+    height: 62px;
+}
+
+.entrada {
+    width: 90px;
+    height: 22px;
+    float: right;
+    margin-top: -27px;
+    margin-right: 10px;
+}
+
+.upper-logo2 {
+    width: 246px;
+    height: 8px;
+}
+
+.nome-logo {
+    width: 75px;
+    height: 20px;
+    float: left;
+}
+
+.barcode {
+    margin-left: 30px;
+    width: 75px;
+    height: 20px;
+}
+
+.nome-logo1 {
+    width: 120px;
+    height: 22px;
+    float: left;
+}
+
+.codido {
+    width: 120px;
+    height: 34px;
+    float: left;
+}
+
+.codido h2 {
+    text-align: center;
+    margin-bottom: 0pt;
+    margin-top: 5pt;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nome-logo2 {
+    width: 100px;
+    height: 30px;
+    float: left;
+}
+
+.name-enter {
+    height: 22.6px;
+    width: 110px;
+    float: left;
+}
+
+.space-fill {
+    height: 22.6px;
+    width: 525px;
+    border-bottom: 1px dotted;
+    float: left;
+}
+
+.name-enter1 {
+    height: 22.6px;
+    width: 140px;
+    float: left;
+}
+
+.space1-fill {
+    height: 22.6px;
+    width: 350px;
+    border-bottom: 1px dotted;
+    float: left;
+}
+
+.space1-box {
+    height: 30px;
+    width: 140px;
+}
+
+.empty-box {
+    height: 30px;
+    width: 10px;
+    float: left;
+}
+
+.space2-box {
+    height: 18px;
+    width: 130px;
+    float: left;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.name-menu1 {
+    height: 15px;
+    width: 30px;
+    float: left;
+}
+
+.space1-menu {
+    height: 20px;
+    width: 340px;
+    float: left;
+    border-bottom: 1px dotted;
+}
+
+.name-menu2 {
+    height: 15px;
+    width: 76px;
+    float: left;
+}
+
+.space2-menu {
+    height: 20px;
+    width: 170px;
+    float: left;
+    border: 1px solid;
+}
+
+.name1-menu1 {
+    height: 15px;
+    width: 70px;
+    float: left;
+}
+
+.space1-menu1 {
+    height: 15px;
+    width: 150px;
+    float: left;
+    border-bottom: 1px dotted;
+}
+
+.name2-menu2 {
+    height: 15px;
+    width: 250px;
+    float: left;
+}
+
+.space2-menu2 {
+    height: 15px;
+    width: 375px;
+    float: left;
+    border-bottom: 1px dotted;
+}
+
+.up-input {
+    width: 200px;
+    height: 100px;
+    float: left;
+    border-bottom: 1px solid;
+}
+
+.up-open {
+    width: 115px;
+    height: 100px;
+    float: left;
+    border-bottom: 1px solid;
+}
+
+.tabela {
+    height: 27px;
+    width: 80px;
+    float: left;
+    background-color: #FFF;
+    margin-left: 5px;
+    margin-top: -10px;
+    border: 1px solid;
+}
+
+.paga {
+    height: 10px;
+    width: 70px;
+    float: left;
+    margin: 20px 0px 0px 55px;
+}
+
+.space-btn {
+    width: 300px;
+    height: 10px;
+}
+
+.space2-men {
+    height: 27px;
+    width: 180px;
+    float: left;
+    border: 1px solid;
+    background-color: #FFF;
+}
+
+.date-enter {
+    height: 27px;
+    width: 110px;
+    float: left;
+    border-bottom: 2px solid;
+    margin-left: 10px;
+}
+
+.mid-codigo {
+    height: 27px;
+    width: 130px;
+    float: left;
+    border: 1px solid;
+    background-color: #FFF;
+    margin-left: 50px;
+}
+
+.date-enter1 {
+    height: 7px;
+    width: 110px;
+    float: left;
+    margin-left: 10px;
+}
+
+.mid-codigo1 {
+    height: 7px;
+    width: 170px;
+    float: left;
+    margin-left: 10px;
+}
+
+.mid-paga {
+    height: 27px;
+    width: 130px;
+    float: left;
+    border: 1px solid;
+    background-color: #FFF;
+}
+
+.nome-func {
+    height: 15px;
+    width: 140px;
+    float: left;
+    text-align: left;
+}
+
+.nome {
+    height: 20px;
+    width: 175px;
+    float: left;
+    border-bottom: 1px dotted;
+}
+
+.name-ass {
+    height: 20px;
+    width: 30px;
+    float: left;
+}
+
+.ass {
+    height: 20px;
+    width: 280px;
+    float: left;
+    border-bottom: 1px dotted;
+}
+
+.nome-logo3 {
+    width: 73px;
+    height: 10px;
+    float: left;
+}

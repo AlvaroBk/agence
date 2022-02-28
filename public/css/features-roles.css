@@ -1,0 +1,288 @@
+body {
+    /* font-family: 'CircularStd', sans-serif; */
+    font-size: .9375rem;
+    color: #1f1f1f;
+    background-color: #f7f7f7;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-family: CircularStd; */
+    margin-top: 0;
+    font-weight: 500;
+}
+
+h1,
+.h1 {
+    font-size: 2.25rem;
+}
+
+h2,
+.h2 {
+    font-size: 1.875rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.5rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.125rem;
+}
+
+h5,
+.h5 {
+    font-size: 0.875rem;
+}
+
+h6,
+.h6 {
+    font-size: 0.75rem;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+/*-----------------
+	2. Table
+-----------------------*/
+
+.table-responsive {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.table {
+    color: #333;
+}
+
+.table.table-white {
+    background-color: #fff;
+}
+
+.table thead th {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.table-striped>tbody>tr:nth-of-type(2n+1) {
+    background-color: #f6f6f6;
+}
+
+table.table td h2 {
+    display: inline-block;
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+table.table td h2.table-avatar {
+    align-items: center;
+    display: inline-flex;
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+table.table td h2.table-avatar.blue-link a {
+    color: #007bff;
+}
+
+table.table td h2 a {
+    color: #333;
+}
+
+table.table td h2 a:hover {
+    color: #f43b48;
+}
+
+table.table td h2 span {
+    color: #888;
+    display: block;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+table.dataTable {
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}
+
+.table-nowrap td,
+.table-nowrap th {
+    white-space: nowrap
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f7f7f7;
+    color: #212529;
+}
+
+table.dataTable thead>tr>th.sorting_asc,
+table.dataTable thead>tr>th.sorting_desc,
+table.dataTable thead>tr>th.sorting,
+table.dataTable thead>tr>td.sorting_asc,
+table.dataTable thead>tr>td.sorting_desc,
+table.dataTable thead>tr>td.sorting {
+    padding-right: 30px !important;
+}
+
+.table.custom-table>tbody>tr>td,
+.table.custom-table>tbody>tr>th,
+.table.custom-table>tfoot>tr>td,
+.table.custom-table>tfoot>tr>th,
+.table.custom-table>thead>tr>td,
+.table.custom-table>thead>tr>th {
+    padding: 10px 20px !important;
+}
+
+
+/*-----------------
+	6. Toggle Button
+-----------------------*/
+
+.check {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.checktoggle {
+    background-color: #e0001a;
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 24px;
+    margin-bottom: 0;
+    position: relative;
+    width: 48px;
+}
+
+.checktoggle:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(5px, -50%);
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: left 300ms ease, transform 300ms ease;
+}
+
+.check:checked+.checktoggle {
+    background-color: #55ce63;
+}
+
+.check:checked+.checktoggle:after {
+    left: 100%;
+    transform: translate(calc(-100% - 5px), -50%);
+}
+
+
+/*-----------------
+	26. Roles & Permissions
+-----------------------*/
+
+.roles-menu {
+    margin-top: 20px;
+}
+
+.roles-menu>ul {
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.roles-menu>ul>li {
+    display: block;
+    position: relative;
+}
+
+.roles-menu>ul>li a {
+    border-left: 3px solid transparent;
+    color: #333;
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.roles-menu>ul>li.active a {
+    border-color: #f43b48;
+    color: #f43b48;
+}
+
+
+/*Temporary fix*/
+
+.roles-menu>ul>li a.active {
+    border-color: #f43b48;
+    color: #f43b48;
+}
+
+
+/*Temporaray fix*/
+
+.roles-menu>ul>li a:hover {
+    background-color: #eee;
+    border-color: #f43b48;
+}
+
+.role-action {
+    float: right;
+    display: none;
+}
+
+.roles-menu>ul>li a:hover .role-action {
+    display: block;
+}
+
+.slide-nav .sidebar {
+    margin-left: 0;
+}
+
+
+/*-----------------
+	46. Notification Settings
+-----------------------*/
+
+.notification-list .list-group-item {
+    padding: 15px;
+}
+
+.notification-list .status-toggle {
+    float: right;
+}
+
+input:invalid {
+    border: 3px solid red;
+}
