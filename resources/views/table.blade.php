@@ -160,79 +160,63 @@ async function getData(id){
 
 				if(owner=='consultor'){
 				div=`<table class="table table-bordered" id="table">`
-						dataResult.forEach((element, index) => {
-							div+=`	<thead>
-							
-							<tr>
-								<th colspan='5'>`+element.no_usuario+`</th>
-							</tr>
-						
+					dataResult.forEach((element, index) => {
+						div+=`<thead>
+								<tr>
+									<th colspan='5'>`+element.no_usuario+`</th>
+								</tr>
 								<tr>
 									<th>Periodo</th>
 									<th>Receita Líquida</th>
 									<th>custo fixo</th>
 									<th>Comissão</th>
 									<th>Lucro</th>
-								
 								</tr>
-							</thead>`
-						
-				
-				div+=  `<tbody >`
-				         
-					dataResult.forEach((element, index) => {
-						perc=100/element.total_imp_inc;
-						receitaL=element.valor-perc; 
-						mult=element.valor*element.total_imp_inc;
-						vl=element.valor-mult;
-						perc_comissao=100/element.comissao_cn;
-						comissao=vl*perc_comissao;
-						lucroaux=element.brut_salario+comissao;
-						lucro=receitaL-lucroaux;
-						div+=`	<tr >
+							</thead>`;
+
+						div+= `<tbody>`
+							perc=100/element.total_imp_inc;
+							receitaL=element.valor-perc; 
+							mult=element.valor*element.total_imp_inc;
+							vl=element.valor-mult;
+							perc_comissao=100/element.comissao_cn;
+							comissao=vl*perc_comissao;
+							lucroaux=element.brut_salario+comissao;
+							lucro=receitaL-lucroaux;
+							div+=`<tr>
 									<td >`+element.data_emissao+`</td>
 									<td >`+receitaL+`</td>
 									<td >`+element.brut_salario+`</td>
 									<td >`+comissao+`</td>
 									<td >`+lucro+`</td>
-									</tr>`
-								});`
-									
-							</tbody>`
-						});`
+								</tr>`
+						div+=`</tbody>`;
+					});
+					div+=`
 						</table>`;
-			   
-
 				}else{
-					
+
+					div=`<table class="table table-bordered" id="table">`
+						dataResult.forEach((element, index) => {
+							div+=`<thead>
+									<tr>
+										<th>Periodo</th>
+										<th>`+element.no_razao+`</th>
+									</tr>	
+								</thead>`;
+							div+= `<tbody>`
+								perc=100/element.total_imp_inc;
+								receitaL=element.valor-perc; 
+								div+=`<tr>
+										<td >`+element.data_emissao+`</td>
+										<td >`+receitaL+`</td>
+									</tr>`
+							div+=`</tbody>`;
+						});
+					div+=`</table>`;
+						
 				
 				
-				div+=  `
-				<table class="table table-bordered" id="table">`
-				dataResult.forEach((element, index) => {
-					div+=`<thead>
-							
-						<tr>
-							<th>Periodo</th>
-								
-								<th>`+element.no_razao+`</th>
-								
-						</tr>
-							
-					</thead>
-					
-					<tbody>`
-							dataResult.forEach((element, index) => {
-							perc=100/element.total_imp_inc;
-							receitaL=element.valor-perc; 
-					div+=`	<tr >
-							<td >`+element.data_emissao+`</td>
-							<td >`+receitaL+`</td>
-							</tr>`
-					});`	
-							</tbody>`
-						});	`
-						</table>`;
 			   
 				}
 				
