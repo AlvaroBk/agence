@@ -20,31 +20,10 @@
         <link rel="stylesheet" href="{{ asset('css/style3.css') }}">
         <link rel="stylesheet" href="{{ asset('css/tablestatus.css') }}">
         <link rel="stylesheet" href="{{ asset('css/table.css') }}">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
-            integrity="sha512-DNeDhsl+FWnx5B1EQzsayHMyP6Xl/Mg+vcnFPXGNjUZrW28hQaa1+A4qL9M+AiOMmkAhKAWYHh1a+t6qxthzUw=="
-            crossorigin="anonymous">
-        </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
-            integrity="sha512-yye/u0ehQsrVrfSd6biT17t39Rg9kNc+vENcCXZuMz2a+LWFGvXUnYuWUW6pbfYj1jcBb/C39UZw2ciQvwDDvg=="
-            crossorigin="anonymous" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-            integrity="sha512-BNZ1x39RMH+UYylOW419beaGO0wqdSkO7pi1rYDYco9OL3uvXaC/GTqA5O4CVK2j4K9ZkoDNSSHVkEQKkgwdiw=="
-            crossorigin="anonymous">
-        </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-        
-      
-        <!-- endinject -->
-        <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+        
     </head>
     <body id="body">
         <div class="container-scroller">

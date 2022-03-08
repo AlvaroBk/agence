@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('main')
+
 <div class="content-wrapper">
 	<div class="row">
 		<div class="col-lg-12 grid-margin stretch-card">
@@ -19,8 +20,8 @@
 							<thead>
 								<tr>
 									<th>Periodo</th>
-									<th colspan='2' ><input type="date" id="from" name="from" style="width:170px;"> a
-										   <input type="date" id="to" name="to" style="width:170px;">
+									<th colspan='2' ><input type="text"  placeholder="dd/mm/yyyy" id="from" name="from" style="width:170px;"> a
+										   <input type="text" id="to" name="to" placeholder="dd/mm/yyyy" style="width:170px;">
 									</th>
 							
 								</tr>
@@ -81,12 +82,17 @@
 <link rel="stylesheet" href="{{ asset('css/multi-form.css') }}">
 <link rel="stylesheet" href="{{ asset('css/searchbox.css') }}">
 <link rel="stylesheet" href="{{ asset('css/demo.css') }}">
+<link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">
 <script src="{{ asset('js/search.js') }}"></script>
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="js/multiselect.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+
+
+
   
 <script>
+
+
 	
 async function getData(id){
 
@@ -132,6 +138,12 @@ async function getData(id){
     }
 
 	$('.select').multiselect();
+	$('#from').datepicker({
+		'format':'dd-mm-yyyy'
+	});
+	$('#to').datepicker({
+		'format':'dd-mm-yyyy'
+	});
 
 	async function getValues(){
 
@@ -153,10 +165,18 @@ async function getData(id){
             data: {code: code,selected: selected,"_token": "{{ csrf_token() }}",from:from,to:to,owner:owner},
             dataType: 'json',
             success: function (response) {
-				var result=response,div="",perc="",receitaL="",mult="",
-				vl="",perc_comissao="",comissao="",lucro="",lucroaux="";
-				dataResult=result.receitas;
-				owner=result.owner;
+				var result=response,
+					div="",
+					perc="",
+					receitaL="",
+					mult="",
+					vl="",
+					perc_comissao="",
+					comissao="",
+					lucro="",lucroaux="",
+					 max=0;
+					dataResult=result.receitas;
+					owner=result.owner;
 
 				if(owner=='consultor'){
 				div=`<table class="table table-bordered" id="table">`
@@ -195,7 +215,7 @@ async function getData(id){
 					div+=`
 						</table>`;
 				}else{
-
+                      
 					div=`<table class="table table-bordered" id="table">`
 						dataResult.forEach((element, index) => {
 							div+=`<thead>
@@ -208,9 +228,17 @@ async function getData(id){
 								perc=100/element.total_imp_inc;
 								receitaL=element.valor-perc; 
 								div+=`<tr>
-										<td >`+element.data_emissao+`</td>
-										<td >`+receitaL+`</td>
-									</tr>`
+										<td>`+element.data_emissao+`</td>`
+										if(receitaL>max){
+										  max=receitaL
+								div+=	`<td>`+max+`</td>`;
+										
+										}else{
+								div+=		`<td style="color:blue" >`+receitaL+`</td>`;
+										}
+										
+										
+									`</tr>`
 							div+=`</tbody>`;
 						});
 					div+=`</table>`;
@@ -266,7 +294,8 @@ async function getData(id){
 					 valor.push(element.valor);
 					 custo.push(element.brut_salario);
                      custoT +=custo[0];
-					 count += index+1
+					 count += index+1;
+					 custo_medio=custoT/count;
 				 });
                     
 				console.log(custo_medio=custoT/count);
@@ -290,7 +319,10 @@ async function getData(id){
 						label: "",
 						data: custo_medio,
 						lineTension: 0, 
+						pYAxisMinValue: 32000,
+						sYAxisMaxValue: 32000,
 						fill: true 
+						borderColor: "rgba(54, 162, 235, 1)",
 					}
 					]
 				

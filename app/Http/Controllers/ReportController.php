@@ -10,8 +10,10 @@ class ReportController extends Controller
     public function generateReport(Request $request)
     {
         $user = $request->get('selected');
-        $from=$request->get('from');
-        $to=$request->get('to');
+        $dateFrom=$request->get('from');
+        $dateTo=$request->get('to');
+        $from = date('Y-m-d', strtotime($dateFrom));
+        $to = date('Y-m-d', strtotime($dateTo));
         $owner=$request->get('owner');
 
         if($owner=='Consultor'){
@@ -33,7 +35,6 @@ class ReportController extends Controller
                 $owner="cliente";
             
         }
-        
             
         return response()->json(['receitas'=>$result,'owner'=>$owner]);
     }

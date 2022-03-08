@@ -12,11 +12,9 @@ class DataController extends Controller
         {
             $result = DB::table('cao_usuario')
             ->join('permissao_sistema', 'cao_usuario.co_usuario', '=', 'permissao_sistema.co_usuario')
-            ->where('co_sistema','=',1)
-            ->where('in_ativo','=','S')
-            ->where('co_tipo_usuario','=',0)
-            ->orwhere('co_tipo_usuario','=',1)
-            ->orwhere('co_tipo_usuario','=',2)
+            ->where('permissao_sistema.co_sistema','=',1)
+            ->where('permissao_sistema.in_ativo','=','S')
+            ->whereIn('permissao_sistema.co_tipo_usuario',[0,1,2])
             ->get('no_usuario as user');
 
             $owner="Consultor";
@@ -27,6 +25,7 @@ class DataController extends Controller
             $result = DB::table('cao_cliente')->where('tp_cliente','=','A')->get('no_razao as user');
             $owner="Cliente";
          }
+
          return response()->json(['data'=>$result,'owner'=>$owner]);
        
     }

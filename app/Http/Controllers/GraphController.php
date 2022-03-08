@@ -11,6 +11,10 @@ class GraphController extends Controller
    {    $user = $request->get('selected');
         $from=$request->get('from');
         $to=$request->get('to');
+        $dateFrom=$request->get('from');
+        $dateTo=$request->get('to');
+        $from = date('Y-m-d', strtotime($dateFrom));
+        $to = date('Y-m-d', strtotime($dateTo));
         $owner=$request->get('owner');
         if($owner=="Consultor"){
             $result = DB::table('cao_fatura')
